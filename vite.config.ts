@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Relative paths for GitHub Pages
+  base: '/webflow-app-cdn/', // GitHub Pages repo name
   build: {
     outDir: 'dist',
     sourcemap: true,
