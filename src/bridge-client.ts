@@ -19,7 +19,7 @@ export interface ProjectContext {
 }
 
 export interface ImportStep {
-  id: string;
+  id: 'assets' | 'variables' | 'xscp' | 'bind' | 'cmsBind' | 'cms';
   status: 'waiting' | 'running' | 'done' | 'skipped' | 'error' | 'paused';
   label: string;
   detail?: string;
